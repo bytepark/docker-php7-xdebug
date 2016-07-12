@@ -3,7 +3,7 @@ FROM php:7.0-fpm
 MAINTAINER bytepark GmbH <code@bytepark.de>
 
 # Install developer dependencies
-RUN apt-get update -yqq && apt-get install -y libsqlite3-dev libxml2-dev libicu-dev libfreetype6-dev libmcrypt-dev libjpeg62-turbo-dev libpng12-dev git libcurl4-gnutls-dev libbz2-dev libssl-dev -yqq
+RUN apt-get update -yqq && apt-get install -y git libsqlite3-dev libxml2-dev libicu-dev libfreetype6-dev libmcrypt-dev libjpeg62-turbo-dev libpng12-dev git libcurl4-gnutls-dev libbz2-dev libssl-dev -yqq
 
 # Install php extensions
 RUN docker-php-ext-install pdo_mysql
